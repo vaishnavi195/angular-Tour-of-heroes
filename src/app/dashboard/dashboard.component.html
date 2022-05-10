@@ -1,11 +1,6 @@
 <h2>Top Heroes</h2>
-<ul class="heroes">
-  <li *ngFor="let hero of heroes">
-    <a >
-      <span class="badge">{{ hero.id }}</span> {{ hero.name }}
-    </a>
-  </li>
-</ul>
-<!-- <a *ngFor="let hero of heroes" routerLink="/detail/{{ hero.id }}">
-      {{ hero.name }}
-    </a> -->
+<div class="heroes-menu">
+  <a *ngFor="let hero of heroes" routerLink="/detail/{{ hero.id }}">
+    {{ hero.name }}
+  </a>
+</div>
